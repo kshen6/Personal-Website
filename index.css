@@ -1,0 +1,57 @@
+body {
+    font-family: 'Montserrat' !important;
+    background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.4)), url("./img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    border-radius: 0;
+    background-color: rgb(173, 215, 229);
+}
+
+.sidenav {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(80, 100, 107);
+    overflow-x: hidden;
+    padding-top: 40px;
+}
+
+.sidenav #photo {
+    height: 15em;
+    border-radius: 50%;
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
+}
+
+.sidenav #intro {
+    margin: 2em;
+    padding: 2em;
+    background-color: rgb(173, 215, 229);
+    display: block;
+    text-align: center;
+    border-radius: .5em;
+}
+
+.sidenav #intro p {
+    font-size: 1.1em;
+}
+
+.main {
+    margin-left: 300px;
+    padding-top: 10em;
+}
+
+.main #descrip {
+    background-color: rgb(173, 215, 229);
+    padding: 3em;
+    margin: 5em;
+    display: block;
+    border-radius: .5em;
+    overflow: hidden;
+}
