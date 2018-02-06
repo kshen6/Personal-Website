@@ -6,52 +6,98 @@ body {
     height: 100%;
     background-position: center;
     border-radius: 0;
-    background-color: rgb(173, 215, 229);
+    background-color: #add7e5;
+}
+
+.fa {
+    padding: .5em;
+    font-size: 1.2em;
+    width: 20%;
+    margin: .5em;
+    border-radius: .4em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #0077B5;
+    color: white;
+}
+
+.fa-envelope-o {
+    background: #73b9df;
+    color: white;
 }
 
 .sidenav {
     height: 100%;
-    width: 300px;
+    width: 25%;
     position: fixed;
-    z-index: 1;
+    z-index: 1; /* stack order: highest priority */
     top: 0;
     left: 0;
-    background-color: rgb(80, 100, 107);
+    background-color: #50646b;
     overflow-x: hidden;
     padding-top: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
-.sidenav #photo {
-    height: 15em;
+.sidenav img {
+    height: 35%;
     border-radius: 50%;
-    margin-left: auto;
+    margin: auto;
     display: block;
-    margin-right: auto;
 }
 
-.sidenav #intro {
+.sidenav div {
     margin: 2em;
     padding: 2em;
-    background-color: rgb(173, 215, 229);
+    background-color: #add7e5;
     display: block;
     text-align: center;
-    border-radius: .5em;
+    border-radius: .2em;
 }
 
-.sidenav #intro p {
+.sidenav div p {
     font-size: 1.1em;
 }
 
 .main {
     margin-left: 300px;
     padding-top: 10em;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
 }
 
-.main #descrip {
-    background-color: rgb(173, 215, 229);
-    padding: 3em;
-    margin: 5em;
+.main div {
     display: block;
-    border-radius: .5em;
-    overflow: hidden;
+    background-color: #add7e5;
+    padding: 3em;
+    margin: 2em;
+    width: 80%;
+    border-radius: .2em;
+    text-align: left;
+}
+
+.main .projects {
+    display: flex;
+    flex-direction: row wrap;
+    padding: 0;
+}
+
+.main .projects div {
+    padding: .5em;
+    margin: .5em;
+    border: solid 1px black;
 }

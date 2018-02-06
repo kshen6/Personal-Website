@@ -1,0 +1,36 @@
+Flexbox: more efficient way to layout, align, distribute space in container 
+-give container the ability to alter item width/height
+
+flexbox: directionally agnostic as opposed to regular layouts
+
+items are laid out on the main axis: from main-start to main-end
+or they could be laid on cross axis: from cross-start to cross-end
+
+main axis: primary axis along which flex items laid out (follows flex-direction)
+main-start | main-end
+main size: main dimension (width or height, based on direction)
+cross axis, cross-start, cross-end, cross size also exist 
+
+parent props:
+
+.container {
+    display: flex; -> defines flex container, enables flex context for direct children (CSS cols have no effect)
+    flex-direction: row (default) | row-reverse | column | column-reverse;
+    flex-wrap: nowrap (all flex on 1 line) | wrap (wrap on multiple lines) | wrap-reverse;
+    flex-flow: combo of direction and wrap; default is row nowrap;
+    justify-content:  flex-start | flex-end | center | space-between | space-around | space-evenly;
+    align-items: (on cross axis) flex-start | flex-end | center | stretch | baseline;
+    align-content: aligns flex containers line space between (same options as justify-content); (stretch is default)
+}
+
+.child {
+    margin: auto (perfectly centers);
+    order: <integer>; default is 0, but you can control the order
+    flex-grow: unitless value thats a proportion, allows item to grow
+        dictates what amount of extra space inside flex container the item should take 
+        if all children have value 1, remaining space will be distributed equally
+        if one child has 2, it would take up 2wice as much space as the others;
+    flex-shrink: also a thing;
+    flex-basis: default size of element before remaining space is distributed;
+    flex: shorthand for all. do this! sets other stuff intelligently. default: 0 1 auto;
+}
