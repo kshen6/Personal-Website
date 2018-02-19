@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Barlow');
+
+/***************************
+Reset Styles
+***************************/
+@import "normalize.css";
+
+/* Change all elements to use border-box */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/***************************
+Theme Styles
+***************************/
+
+$main-background: #add7e5;
+$light-background: #d8e9ee;
+$side-background: #50646b;
+$main-font: 'Montserrat';
+
+/***************************
+Base Styles
+***************************/
+
+body {
+    font-family: $main-font, 'Barlow', Helvetica, Arial, sans-serif !important;
+    font-weight: normal;
+    background-color: $main-background;
+}
+
+/***************************
+Layout Styles
+***************************/
+
+.content {
+    margin-left: 25%;
+
+    div {
+        padding-top: 15em;
+        padding-bottom: 15em;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+#main {
+    position: relative;
+
+    .main-text {
+        width: 80%;
+        text-align: left;
+        padding: 2em;
+        margin: auto;
+        border-radius: .2em;
+    }
+}
+
+#projects {
+    padding-top: 2em;
+    padding-bottom: 5em;
+    position: relative;
+    margin: 0;
+
+    .project-text {
+        width: 60%;
+        padding: 1em;
+        margin: 2em;
+
+        iframe {
+            max-width: 100%;
+            display: inline;
+        }
+    }
+
+    .left {
+        margin-left: 2em;
+        margin-right: auto;
+    }
+
+    .right {
+        margin-left: auto;
+        margin-right: 2em;
+    }
+}
+
+#contact {
+    margin: 0;
+    padding: 0;
+
+    div {
+        margin: 0;
+        padding: 0;
+    }
+
+    textarea {
+        display: block;
+        resize: none;
+    }
+}
+
+.sidenav {
+    height: 100%;
+    width: 25%;
+    position: fixed;
+    overflow-x: hidden;
+    z-index: 1; /* stack order: highest priority */
+    top: 0;
+    left: 0;
+
+    img {
+        width: 60%;
+        height: auto;
+        margin: 3em auto;
+        display: block;
+    }
+
+    .sidenav-text {
+        padding: 1.5em;
+        margin: 1.5em;
+        border-radius: .2em;
+        text-align: center;
+        background-color: $main-background;
+    }
+}
+
+@media screen and (max-width: 47.9375em){
+    .sidenav {
+        width: 100%;
+        height: auto;
+        position: static;
+
+        img {
+            width: 42%;
+        }
+
+        .sidenav-text {
+            margin-left: 12vw;
+            margin-right: 12vw;
+            padding: .5em;
+        }
+    }
+
+    .content {
+        margin-left: 0;
+    }
+}
+
+p {
+    font-size: 1.1em;
+}
+
+.icon-bar {
+    overflow: auto; /* Overflow due to float */
+    margin: 0;
+    padding: 0;
+    
+    .fa {
+        float: center;
+        padding: .5em;
+        font-size: 1.2em;
+        width: 2.5em;
+        margin: .5em;
+        border-radius: .4em;
+        text-align: center;
+        text-decoration: none;
+    
+        :hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+.big-triangle {
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100% !important;
+    border-radius: 0 !important;
+}
+
+/* big triangle */
+.big-triangle:before {
+    right: 50%;
+    border-right: 1600px solid transparent;
+    border-left: 1600px solid;
+}
+
+.big-triangle:after {
+    left: 50%;
+    border-left: 1600px solid transparent;
+    border-right: 1600px solid;
+}
+
+.big-triangle:after, .big-triangle:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    z-index: 100;
+/*  change the hieght and the color below */
+    border-bottom: 160px solid $light-background;
+    -moz-transform: rotate(0.000001deg);
+    -webkit-transform: rotate(0.000001deg);
+    -o-transform: rotate(0.000001deg);
+    -ms-transform: rotate(0.000001deg);
+    transform: rotate(0.000001deg);
+}
+
+/***************************
+Module Styles
+***************************/
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #0077B5;
+    color: white;
+}
+
+.fa-envelope-o {
+    background: #73b9df;
+    color: white;
+}
+
+.sidenav {
+    background-color: $side-background;
+
+    #profile {
+        border-radius: 50%;
+    }
+}
+
+#main {
+    background-image: linear-gradient(rgba(9, 12, 12, 0.4), rgba(6, 13, 15, 0.5)), url("./img/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin background-opacity($color, $opacity: 0.3) {
+    background: rgba($color, $opacity);
+}
+
+#projects {
+    background: $light-background;
+}
+
+.main-text {
+    color: #000000;
+    font-size: 1.1em;
+    @include background-opacity($main-background, .9);
+}
+
+.project-text {
+    color: #000000;
+    background: rgba(255, 255, 255, .9);
+
+    a:hover {
+        text-decoration: none;
+    }
+}

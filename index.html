@@ -1,66 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113482665-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
 
-            gtag('config', 'UA-113482665-1');
-        </script>
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113482665-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    gtag('config', 'UA-113482665-1');
+  </script>
 
-        <title>Kendrick Shen</title>
-        <link rel="icon" href="./img/icon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="index.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css"/>
 
-    </head>
 
-    <body>
+  <title>Kendrick Shen</title>
+  <link rel="icon" href="./img/icon.png">
+</head>
 
-        <div class="sidenav">
-            <img src="./img/kendrick-shen.jpg" id="photo"/>
-            <div>
-                <h2>Kendrick Shen</h2>
-                <p>Stanford, CA<br /></p>
-                <p>Hi! I'm an undergraduate student, considering majoring in computer science.</p>
-                <a href="https://www.facebook.com/kendrick.shen.10" class="fa fa-facebook"></a>
-                <a href="https://www.linkedin.com/in/kendrickshen/" class="fa fa-linkedin"></a>
-                <a href="mailto:kshen6@stanford.edu" class="fa fa-envelope-o"></a>
-            </div>
+<body>
+
+  <div class="sidenav">
+    <img src="./img/kendrick-shen.jpg" id="profile" />
+    <div class="sidenav-text">
+      <h2>Kendrick Shen</h2>
+      <p>Stanford, CA
+        <br />
+      </p>
+      <p>Hi! I'm an undergraduate student, researcher, and entrepreneur.</p>
+      <div class="icon-bar">
+        <a href="https://www.facebook.com/kendrick.shen.10" class="fa fa-facebook"></a>
+        <a href="https://www.linkedin.com/in/kendrickshen/" class="fa fa-linkedin"></a>
+        <a href="mailto:kshen6@stanford.edu" class="fa fa-envelope-o"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div id="main">
+      <div class="main-text">
+        <p>
+          I'm a student at Stanford from Pasadena, California. My interests lie in public health and computer science, in addition
+          to classical guitar and piano and electric guitar. I'm a musician and a designer, with a special eye for details.
+        </p>
+      </div>
+      <div class="big-triangle"></div>
+    </div>
+
+    <div id="projects">
+      <div class="project-text left">
+        <h3>Nova Approval</h3>
+        <h5>Web Developer (Early Employee)</h5>
+        <p>
+          Nova Approval aims to bring technology into health regulatory affairs. By targeting the FDA premarket approval process, we
+          use data science to turn decades of submission approvals into a guide for regulatory success. I'm working on various
+          aspects of design and research, using React to build a front-end that caters to the needs of our customers in regulatory
+          affairs.
+        </p>
+      </div>
+      <div class="project-text right">
+        <h3>Bioinformatics and Genetics Researcher</h3>
+        <h5>van Haren Laboratory</h5>
+        <p>
+          My research aims to discover the immunometabolic effects of vitamin D in children with X-ALD, a significant genetic mimic
+          of multiple sclerosis. Using a two-pronged approach through digital gene set enrichment analysis and tissue culture,
+          I hope to shed light on the pathways and expression patterns that give rise to neurodegenerative disease.
+        </p>
+      </div>
+      <div class="project-text left">
+        <h3>Media</h3>
+        <h5>Classical Guitarist and Pianist</h5>
+        <p>
+          Below are two videos recorded at Guitar Salon International, of Torroba's "Fandanguillo" and Praetorius's "Courante", as
+          part of the Parkening International Young Guitarists Competition. I also perform as a freelance for banquets and
+          celebratory events.
+          <a href="https://www.youtube.com/channel/UCjiSLpeVjl0XjqxQZDt663A?view_as=subscriber">Link</a>
+          to Youtube.
+        </p>
+        <iframe width="45%" height="auto" src="https://www.youtube.com/embed/6sKe4E4_n7w" frameBorder="0" allowfullscreen="true"></iframe>
+        <iframe width="45%" height="auto" src="https://www.youtube.com/embed/1EKBIG90NlQ" frameborder="0" allowfullscreen="true"></iframe>
+      </div>
+    </div>
+
+    <div id="contact">
+      <form id="contact-form" method="post" action="contact.php" role="form">
+        <h2>Contact</h2>
+        <div class="messages"></div>
+
+          <div class="controls">
+
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" type="text" class="form-control" name="name" aria-describedby="name" placeholder="First and Last" required="required" data-error="Please enter your name."/>
+            <div class="help-block with-errors"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input id="email" type="email" class="form-control" name="email" aria-describedby="email" placeholder="Enter email" required="required" data-error="Please enter a valid email."/>
+            <div class="help-block with-errors"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Enter message" required="required" data-error="Please enter a message."></textarea>
+            <div class="help-block with-errors"></div>
+          </div>
+
+          <button type="submit" value="submit" name="form-submit" class="btn btn-primary">Send Message</button>
+
         </div>
 
-        <div class="main">
-            <div>
-                <p>Attempting to survive the struggles of life! Including chemistry and computer science. Thanks for visiting.<br>(btw you're being tracked so don't do any hokey pokey). ;)</p>
-            </div>
-            <div>
-                <p>Hobbies: Making music, hiking, and going to Late Night at Lakeside</p>
-            </div>
-            <div>
-                <h3>What I'm Working On</h3>
-                <div class="projects">
-                    <div>
-                        <p>Nova Approval – A Digital FDA Consultant. Using artificial intelligence and data science, we are turning decades of FDA submission history into a guide for success.</p>
-                    </div>
-                    <div>
-                        <p>Effects of Vitamin D Treatment on Immunometabolic pathways in MS patients</p>
-                    </div>
-                    <div>
-                        <p>Stanford BandIt – A musical community for college students to collaborate and perform</p>
-                    </div>
-                    <div>
-                        <p>FlexBox</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </form>
+    </div>
 
-    </body>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+  <script src="contact.js"></script>
+</body>
+
 </html>
