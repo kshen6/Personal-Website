@@ -1,2 +1,2 @@
-# kshen6.github.io
-Kendrick Shen website
+# kendrickshen.com
+Personal Website
